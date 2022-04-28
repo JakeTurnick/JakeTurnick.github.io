@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/ff4418d11d.js" crossorigin="anonymous"></script>
+   <!-- Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- CSS Styling -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Self script -->
+   <script src="app.js"></script>
+   <title>Personal Portfolio</title>
+</head>
+<body>
+   <!-- Head sticks to top 
+   Name is link to home, nav on right -->
+      <header>
+         <h1 class="head-title">Jake Turnick - Tech Enthusiast</h1>
+         <nav class="head-nav">
+            <ul>
+               <!-- <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li> -->
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+
+   <!-- wrapper for main content -->
+   <div class="wrapper">
+      <main class="showcase" id="about">
+         <div class="about-me">
+            <h2>About me</h2>
+            <p>A young tech individual looking to build and experiment. <br>
+               Currently working on web developement, but always looking to learning more! <br>
+               <br>
+               The world never stops moving, and neither do my skills.
+
+            </p>
+
+         </div>
+         <img src="./imgs/me.jpg" alt="A selfie of me & my plants">
+      </main>
+
+      <div class="looking-for">
+         <h2>What I'm looking for</h2>
+         <ul>
+            <li>A flexible job with an environment I can go to for focus and team comradery</li>
+            <li>Work that will expand my developement capabilities and challenge me to learn more</li>
+            <li>A set of challenges that allows me to create solutions to problems</li>
+         </ul>
+      </div>
+
+      <!-- Cards with samples -->
+      <section class="portfolio" id="portfolio">
+         <section class="work-experience">
+            <h2>Work Experience</h2>
+            <div class="card">
+               <h3>Network Tech - GE</h3><span>March 2020 - Present</span>
+               <ul>
+                  <li>Use of Cisco Unified Connection Manager</li>
+                  <li>Troubleshoot local network issues</li>
+                  <li>Provide support for remote teams</li>
+                  <li>Assist with other IT projects as needed</li>
+               </ul>
+
+            </div>
+            <div class="card">
+               <h3>Windows 10 migration and support - Castleton Commodities International</h3><span>Aug 2019 - Feb 2020</span>
+               <ul>
+                  <li>Migrated users and computers from Windows 7 to Windows 10</li>
+                  <li>Installed, configured and supported apps - Office 365</li>
+                  <li>Communicated between teams and users to resolve or escalate a problem</li>
+                  <li>Set up networked devices - remote PC's, Printers, etc</li>
+                  <li>Resolved conflicts for names and IP addresses</li>
+               </ul>
+
+            </div>
+            <div class="card">
+               <h3>IT Support Specialist - Legg Mason</h3><span>April 2019 - July 2019</span>
+               <ul>
+                  <li>Imaged computers from PXE, transported user information (installed apps, mapped drives, printers)</li>
+                  <li>Managed device collection membership on computers in SCCM </li>
+                  <li>Supported Microsoft Suite, especially Microsoft Office 365</li>
+                  <li>Interacted with 200 end users to resolve application issues, installing hardware/software, replacing desktops with laptops </li>
+                  <li>Troubleshoot and Report issues / fixes (in-house / remote)</li>
+                  <li>Used Service-Now as ticketing software</li>
+                  <li>Contributed to company wide device roll out</li>
+               </ul>
+
+            </div>
+         </section>
+         <section class="education">
+            <h2>Education</h2>
+            <div class="card">
+               <h3>Codecademy</h3><span>Ongoing</span>
+               <ul>
+                  <li>Front-End develope Pro course
+                     <ul>
+                        <li>HTML/CSS/JS</li>
+                        <li>Git & Github</li>
+                        <li>JS testing & TDD (with Mocha)</li>
+                     </ul>
+                  </li>
+                  <li>Still learning</li>
+               </ul>
+            </div>
+            <div class="card">
+               <h3>Porter & Chester - Computer Networking Technology</h3><span>Vocational Degree - Graduated Spring 2019</span>
+               <ul>
+                  <li>1 year I.T. program with a focus on A+, Network+, Security+, Windows 10, Server 2016, and Linux</li>
+                  <li>Lead Tech and Server Admin of class
+                     <ul>
+                        <li>Created and maintained Windows Domain, including Servers, Clients and AD</li>
+                        <li>Virtualized computers for practice and experimentation</li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="card">
+               <h3>Fairchild Wheeler Magnet Highschool</h3><span>GED - Graduated summer 2016</span>
+               <ul>
+                  <li>I.T. Magnet focus
+                     <ul>
+                        <li>Computer hardware & building</li>
+                        <li>Software fundamentals</li>
+                     </ul>
+                  </li>
+                  <li>Advanced Maths up to Calculus</li>
+               </ul>
+            </div>
+         </section>
+      </section>
+
+      <!-- Contact + what I'm looking for -->
+      <footer id="contact">
+         <p>I prefer email first to set up a call, spam calls are rampant and my phone filter is on!</p>
+         <section class="socials">
+            <div class="social-card" id="linkedin">
+               <i class="fa-brands fa-linkedin"></i><br>
+               <a href="https://www.linkedin.com/in/jake-turnick-064753164/">LinkedIn</a>
+            </div>
+            <div class="social-card" id="email">
+               <i class="fa-solid fa-envelope"></i>
+               <p>jaketurnick@gmail.com</p>
+            </div>
+            <div class="social-card">
+               <i class="fa-solid fa-phone"></i>
+               <p>(203)615-2581</p>
+            </div>
+         </section>
+         
+      </footer>
+
+   <!-- /wrapper -->
+   </div>
+</body>
+</html>

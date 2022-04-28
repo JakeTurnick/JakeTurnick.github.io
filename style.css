@@ -1,0 +1,147 @@
+:root {
+  font-family: 'Ubuntu Mono', monospace;
+  --bg-main: hsl(160, 100%, 80%);
+  --bg-main-dark: hsl(170, 100%, 40%);
+  --border: hsl(240, 100%, 60%);
+  --border-shadow: 0px 0px 10px 5px hsl(160, 33%, 50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-shadow: var(--border-shadow);
+          box-shadow: var(--border-shadow);
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #80ffd5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100vw;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  border-radius: 10px;
+}
+
+header .head-title {
+  padding: 0px 10vh;
+  font-size: 3vh;
+}
+
+header .head-nav {
+  padding: 0px 10vh;
+}
+
+header .head-nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+header .head-nav ul li {
+  font-size: 2rem;
+  padding: 0px 10px;
+}
+
+header .head-nav ul li a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 0px 5vh;
+  background-color: var(--bg-main);
+  -webkit-box-shadow: var(--border-shadow);
+          box-shadow: var(--border-shadow);
+}
+
+.wrapper h2 {
+  font-size: 3rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  border-radius: 10px;
+}
+
+main h2 {
+  font-size: 3rem;
+  padding: 0px 25px;
+}
+
+main p {
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+main img {
+  max-height: 400px;
+  max-width: 400px;
+  padding: 10px 40px;
+  width: 20vw;
+  height: 20vw;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials .social-card {
+  padding: 20px;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.socials .social-card:hover {
+  background-color: var(--bg-main-dark);
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .card {
+  padding: 25px;
+  margin: 25px;
+}
+
+footer .socials .social-card {
+  font-size: 2.5vw;
+}
+/*# sourceMappingURL=style.css.map */

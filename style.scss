@@ -1,0 +1,145 @@
+:root {
+   font-family: 'Ubuntu Mono', monospace;
+   --bg-main: hsl(160, 100%, 80%);
+   --bg-main-dark: hsl(170, 100%, 40%);
+   --border: hsl(240, 100%, 60%); // for size testing
+   --border-shadow: 0px 0px 10px 5px hsl(160, 33%, 50%);
+   box-sizing: border-box;
+   line-height: 1.5rem;
+   font-weight: 600;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   box-shadow: var(--border-shadow);
+}
+
+// Top bar
+header {
+   position: sticky;
+   top: 0px;
+   background-color: hsl(160, 100%, 75%);
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   width: 100vw;
+   box-shadow: inherit;
+   border-radius: 10px;
+
+
+   .head-title {
+      padding: 0px 10vh;
+      font-size: 3vh;
+   }
+
+   .head-nav {
+      padding: 0px 10vh;
+
+      ul {
+         display: inline-flex;
+         list-style: none;
+
+         li {
+            font-size: 2rem;
+            padding: 0px 10px;
+
+            a {
+               text-decoration: none;
+            }
+         }
+      }
+   }
+}
+
+// Main body
+.wrapper {
+   // width: 100vw;
+   padding: 0px 5vh;
+   background-color: var(--bg-main);
+   // border: 10px solid var(--border);
+   box-shadow: var(--border-shadow);
+
+   h2 {
+      font-size: 3rem;
+   }
+   
+}
+
+// Showcase Skills & About me + Profile img
+main {
+   display: flex;
+   padding: 15px 0px;
+   justify-content: space-between;
+   // border: 10px solid var(--border);
+   box-shadow: inherit;
+   border-radius: 10px;
+
+   h2 {
+      font-size: 3rem;
+      padding: 0px 25px;
+   }
+
+   p {
+      padding: 15px;
+      font-size: 1.5rem;
+   }
+
+   img {
+      max-height: 400px;
+      max-width: 400px;
+      padding: 10px 40px;
+      width: 20vw;
+      height: 20vw;
+   }
+
+}
+
+// Icons w/ links to socials
+.socials {
+   display: flex;
+   justify-content: space-between;
+   // border: 10px solid var(--border);
+
+   .social-card {
+      padding: 20px;
+      margin: auto;
+      // border: 10px solid var(--border);
+      font-size: 2rem;
+
+      &:hover {
+         background-color: var(--bg-main-dark);
+      }
+   }
+}
+
+// Cards of previous website works
+.portfolio {
+   // border: 10px solid var(--border);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+
+   .card {
+      // border: 10px solid var(--border);
+      padding: 25px;
+      margin: 25px;
+   }
+   
+
+}
+
+// Contact me
+footer {
+   // border: 10px solid var(--border);
+
+   .socials {
+      .social-card {
+         font-size: 2.5vw;
+      }
+   }
+
+}
